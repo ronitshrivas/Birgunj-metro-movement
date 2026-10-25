@@ -1,0 +1,82 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Birgunj Metro Movement logo">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFE9C7"/>
+      <stop offset="55%" stop-color="#FFD28A"/>
+      <stop offset="100%" stop-color="#FBBE5E"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FF8A2B"/>
+      <stop offset="100%" stop-color="#EE4D1F"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#17202A"/>
+      <stop offset="100%" stop-color="#0B1016"/>
+    </linearGradient>
+    <path id="arcTop" d="M 70 200 A 130 130 0 0 1 330 200" fill="none"/>
+  </defs>
+
+  <!-- Outer dark ring -->
+  <circle cx="200" cy="200" r="196" fill="url(#ring)"/>
+  <circle cx="200" cy="200" r="192" fill="none" stroke="#EE4D1F" stroke-width="2"/>
+
+  <!-- Curved top text -->
+  <text font-family="'Mukta','Segoe UI',sans-serif" font-size="27" font-weight="800"
+        letter-spacing="4" fill="#FBF6EE">
+    <textPath href="#arcTop" startOffset="50%" text-anchor="middle">BIRGUNJ METRO MOVEMENT</textPath>
+  </text>
+
+  <!-- Side stars -->
+  <g fill="#F5A623">
+    <path d="M 36 200 l 5 -11 5 11 11 0 -9 8 4 12 -11 -7 -11 7 4 -12 -9 -8 z"/>
+    <path d="M 364 200 l -5 -11 -5 11 -11 0 9 8 -4 12 11 -7 11 7 -4 -12 9 -8 z"/>
+  </g>
+
+  <!-- Inner scene disc -->
+  <clipPath id="disc"><circle cx="200" cy="200" r="150"/></clipPath>
+  <g clip-path="url(#disc)">
+    <rect x="50" y="50" width="300" height="300" fill="url(#sky)"/>
+
+    <!-- Sun rays -->
+    <g stroke="#FF8A2B" stroke-width="7" stroke-linecap="round" opacity="0.85">
+      <line x1="200" y1="252" x2="200" y2="96"/>
+      <line x1="200" y1="252" x2="128" y2="124"/>
+      <line x1="200" y1="252" x2="272" y2="124"/>
+      <line x1="200" y1="252" x2="92" y2="176"/>
+      <line x1="200" y1="252" x2="308" y2="176"/>
+      <line x1="200" y1="252" x2="108" y2="140"/>
+      <line x1="200" y1="252" x2="292" y2="140"/>
+    </g>
+
+    <!-- Rising sun -->
+    <circle cx="200" cy="252" r="62" fill="url(#sun)"/>
+
+    <!-- Skyline silhouette on horizon -->
+    <g fill="#13181F">
+      <rect x="50" y="252" width="300" height="100"/>
+      <!-- buildings rising above horizon -->
+      <rect x="92"  y="214" width="20" height="40" rx="2"/>
+      <rect x="118" y="196" width="16" height="58" rx="2"/>
+      <!-- tall metro tower -->
+      <rect x="150" y="150" width="14" height="104"/>
+      <polygon points="150,150 157,128 164,150"/>
+      <rect x="236" y="190" width="16" height="64" rx="2"/>
+      <!-- factory + chimney (industry) -->
+      <rect x="262" y="214" width="34" height="40"/>
+      <polygon points="262,214 272,224 282,214 292,224 296,214 296,222 262,222"/>
+      <rect x="300" y="186" width="9" height="68"/>
+    </g>
+  </g>
+
+  <!-- Horizon ring highlight -->
+  <circle cx="200" cy="200" r="150" fill="none" stroke="#0B1016" stroke-width="6"/>
+
+  <!-- Banner ribbon with Nepali name -->
+  <g>
+    <rect x="58" y="286" width="284" height="46" rx="6" fill="#EE4D1F"/>
+    <rect x="58" y="286" width="284" height="46" rx="6" fill="none" stroke="#FBF6EE" stroke-width="2"/>
+    <text x="200" y="318" text-anchor="middle"
+          font-family="'Mukta','Segoe UI',sans-serif" font-size="25" font-weight="800"
+          fill="#FBF6EE" letter-spacing="1">वीरगंज मेट्रो मुभमेन्ट</text>
+  </g>
+</svg>
